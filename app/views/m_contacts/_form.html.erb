@@ -1,0 +1,65 @@
+<%= form_for(@m_contact) do |f| %>
+  <% if @m_contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@m_contact.errors.count, "error") %> prohibited this m_contact from being saved:</h2>
+
+      <ul>
+      <% @m_contact.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hometown_M_Contact %><br />
+    <%= f.text_field :hometown_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :address1_M_Contact %><br />
+    <%= f.text_field :address1_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :address_M_Contact %><br />
+    <%= f.text_field :address_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :ccity_M_Contact %><br />
+    <%= f.text_field :ccity_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :ccountries_M_Contact %><br />
+    <%= f.text_field :ccountries_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :cstate_M_Contact %><br />
+    <%= f.text_field :cstate_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :zip_M_Contact %><br />
+    <%= f.text_field :zip_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :homephone_M_Contact %><br />
+    <%= f.text_field :homephone_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :cellphone_M_Contact %><br />
+    <%= f.text_field :cellphone_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :webpage_M_Contact %><br />
+    <%= f.text_field :webpage_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :email_M_Contact %><br />
+    <%= f.text_field :email_M_Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :date_M_Contact %><br />
+    <%= f.text_field :date_M_Contact %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

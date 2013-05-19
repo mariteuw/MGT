@@ -1,0 +1,37 @@
+<%= form_for(@m_rating) do |f| %>
+  <% if @m_rating.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@m_rating.errors.count, "error") %> prohibited this m_rating from being saved:</h2>
+
+      <ul>
+      <% @m_rating.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :rating_M_Rating %><br />
+    <%= f.text_field :rating_M_Rating %>
+  </div>
+  <div class="field">
+    <%= f.label :date_M_Rating %><br />
+    <%= f.text_field :date_M_Rating %>
+  </div>
+  <div class="field">
+    <%= f.label :id_user_M_Rating %><br />
+    <%= f.text_field :id_user_M_Rating %>
+  </div>
+  <div class="field">
+    <%= f.label :id_tip_M_Rating %><br />
+    <%= f.text_field :id_tip_M_Rating %>
+  </div>
+  <div class="field">
+    <%= f.label :id_owner_M_Rating %><br />
+    <%= f.text_field :id_owner_M_Rating %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

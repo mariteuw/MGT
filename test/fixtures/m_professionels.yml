@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  high_school_M_Professionel: MyString
+  college_M_Professionel: MyString
+  major_M_Professionel: MyString
+  degre_M_Professionel: MyString
+  occupation_M_Professionel: MyString
+  industry_M_Professionel: MyString
+  email_M_Professionel: MyString
+  date_M_Professionel: MyString
+
+two:
+  high_school_M_Professionel: MyString
+  college_M_Professionel: MyString
+  major_M_Professionel: MyString
+  degre_M_Professionel: MyString
+  occupation_M_Professionel: MyString
+  industry_M_Professionel: MyString
+  email_M_Professionel: MyString
+  date_M_Professionel: MyString

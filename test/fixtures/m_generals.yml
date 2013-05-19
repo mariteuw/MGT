@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gender_M_General: MyString
+  relation_M_General: MyString
+  state_M_General: MyString
+  postal_code_M_General: MyString
+  about_M_General: MyString
+  email_M_General: MyString
+  date_M_General: MyString
+
+two:
+  gender_M_General: MyString
+  relation_M_General: MyString
+  state_M_General: MyString
+  postal_code_M_General: MyString
+  about_M_General: MyString
+  email_M_General: MyString
+  date_M_General: MyString

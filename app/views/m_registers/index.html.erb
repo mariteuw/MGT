@@ -1,0 +1,43 @@
+<h1>Listing m_registers</h1>
+
+<table>
+  <tr>
+    <th>Id city m register</th>
+    <th>Fname m register</th>
+    <th>Lname m register</th>
+    <th>Date bith m register</th>
+    <th>Countrie m register</th>
+    <th>Email m register</th>
+    <th>Pic m register</th>
+    <th>Date today m register</th>
+    <th>Pass m register</th>
+    <th>Adresse1 m register</th>
+    <th>Status m register</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @m_registers.each do |m_register| %>
+  <tr>
+    <td><%= m_register.id_city_M_Register %></td>
+    <td><%= m_register.fname_M_Register %></td>
+    <td><%= m_register.lname_M_Register %></td>
+    <td><%= m_register.date_bith_M_Register %></td>
+    <td><%= m_register.countrie_M_Register %></td>
+    <td><%= m_register.email_M_Register %></td>
+    <td><%= m_register.pic_M_Register %></td>
+    <td><%= m_register.date_today_M_Register %></td>
+    <td><%= m_register.pass_M_Register %></td>
+    <td><%= m_register.adresse1_M_Register %></td>
+    <td><%= m_register.status_M_Register %></td>
+    <td><%= link_to 'Show', m_register %></td>
+    <td><%= link_to 'Edit', edit_m_register_path(m_register) %></td>
+    <td><%= link_to 'Destroy', m_register, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New M register', new_m_register_path %>

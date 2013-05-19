@@ -1,0 +1,31 @@
+<h1>Listing m_ratings</h1>
+
+<table>
+  <tr>
+    <th>Rating m rating</th>
+    <th>Date m rating</th>
+    <th>Id user m rating</th>
+    <th>Id tip m rating</th>
+    <th>Id owner m rating</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @m_ratings.each do |m_rating| %>
+  <tr>
+    <td><%= m_rating.rating_M_Rating %></td>
+    <td><%= m_rating.date_M_Rating %></td>
+    <td><%= m_rating.id_user_M_Rating %></td>
+    <td><%= m_rating.id_tip_M_Rating %></td>
+    <td><%= m_rating.id_owner_M_Rating %></td>
+    <td><%= link_to 'Show', m_rating %></td>
+    <td><%= link_to 'Edit', edit_m_rating_path(m_rating) %></td>
+    <td><%= link_to 'Destroy', m_rating, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New M rating', new_m_rating_path %>

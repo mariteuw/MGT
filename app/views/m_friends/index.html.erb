@@ -1,0 +1,27 @@
+<h1>Listing m_friends</h1>
+
+<table>
+  <tr>
+    <th>Id sender m friends</th>
+    <th>Id receiver m friends</th>
+    <th>Status m friends</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @m_friends.each do |m_friend| %>
+  <tr>
+    <td><%= m_friend.id_sender_M_Friends %></td>
+    <td><%= m_friend.id_receiver_M_Friends %></td>
+    <td><%= m_friend.status_M_Friends %></td>
+    <td><%= link_to 'Show', m_friend %></td>
+    <td><%= link_to 'Edit', edit_m_friend_path(m_friend) %></td>
+    <td><%= link_to 'Destroy', m_friend, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New M friend', new_m_friend_path %>

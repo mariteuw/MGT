@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id_city_M_Register: 1
+  fname_M_Register: MyString
+  lname_M_Register: MyString
+  date_bith_M_Register: MyString
+  countrie_M_Register: MyString
+  email_M_Register: MyString
+  pic_M_Register: MyString
+  date_today_M_Register: MyString
+  pass_M_Register: MyString
+  adresse1_M_Register: MyString
+  status_M_Register: 1
+
+two:
+  id_city_M_Register: 1
+  fname_M_Register: MyString
+  lname_M_Register: MyString
+  date_bith_M_Register: MyString
+  countrie_M_Register: MyString
+  email_M_Register: MyString
+  pic_M_Register: MyString
+  date_today_M_Register: MyString
+  pass_M_Register: MyString
+  adresse1_M_Register: MyString
+  status_M_Register: 1

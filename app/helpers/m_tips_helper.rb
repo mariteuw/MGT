@@ -1,0 +1,2 @@
+module MTipsHelper
+end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rating_M_Rating: 1
+  date_M_Rating: MyString
+  id_user_M_Rating: 1
+  id_tip_M_Rating: MyString
+  id_owner_M_Rating: 1
+
+two:
+  rating_M_Rating: 1
+  date_M_Rating: MyString
+  id_user_M_Rating: 1
+  id_tip_M_Rating: MyString
+  id_owner_M_Rating: 1

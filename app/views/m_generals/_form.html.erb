@@ -1,0 +1,45 @@
+<%= form_for(@m_general) do |f| %>
+  <% if @m_general.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@m_general.errors.count, "error") %> prohibited this m_general from being saved:</h2>
+
+      <ul>
+      <% @m_general.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gender_M_General %><br />
+    <%= f.text_field :gender_M_General %>
+  </div>
+  <div class="field">
+    <%= f.label :relation_M_General %><br />
+    <%= f.text_field :relation_M_General %>
+  </div>
+  <div class="field">
+    <%= f.label :state_M_General %><br />
+    <%= f.text_field :state_M_General %>
+  </div>
+  <div class="field">
+    <%= f.label :postal_code_M_General %><br />
+    <%= f.text_field :postal_code_M_General %>
+  </div>
+  <div class="field">
+    <%= f.label :about_M_General %><br />
+    <%= f.text_field :about_M_General %>
+  </div>
+  <div class="field">
+    <%= f.label :email_M_General %><br />
+    <%= f.text_field :email_M_General %>
+  </div>
+  <div class="field">
+    <%= f.label :date_M_General %><br />
+    <%= f.text_field :date_M_General %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

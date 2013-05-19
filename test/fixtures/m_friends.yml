@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id_sender_M_Friends: 1
+  id_receiver_M_Friends: 1
+  status_M_Friends: 1
+
+two:
+  id_sender_M_Friends: 1
+  id_receiver_M_Friends: 1
+  status_M_Friends: 1

@@ -1,0 +1,49 @@
+<%= form_for(@m_professionel) do |f| %>
+  <% if @m_professionel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@m_professionel.errors.count, "error") %> prohibited this m_professionel from being saved:</h2>
+
+      <ul>
+      <% @m_professionel.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :high_school_M_Professionel %><br />
+    <%= f.text_field :high_school_M_Professionel %>
+  </div>
+  <div class="field">
+    <%= f.label :college_M_Professionel %><br />
+    <%= f.text_field :college_M_Professionel %>
+  </div>
+  <div class="field">
+    <%= f.label :major_M_Professionel %><br />
+    <%= f.text_field :major_M_Professionel %>
+  </div>
+  <div class="field">
+    <%= f.label :degre_M_Professionel %><br />
+    <%= f.text_field :degre_M_Professionel %>
+  </div>
+  <div class="field">
+    <%= f.label :occupation_M_Professionel %><br />
+    <%= f.text_field :occupation_M_Professionel %>
+  </div>
+  <div class="field">
+    <%= f.label :industry_M_Professionel %><br />
+    <%= f.text_field :industry_M_Professionel %>
+  </div>
+  <div class="field">
+    <%= f.label :email_M_Professionel %><br />
+    <%= f.text_field :email_M_Professionel %>
+  </div>
+  <div class="field">
+    <%= f.label :date_M_Professionel %><br />
+    <%= f.text_field :date_M_Professionel %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

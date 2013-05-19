@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bar_M_Preference: MyString
+  fashion_M_Preference: MyString
+  events_M_Preference: MyString
+  beauty_M_Preference: MyString
+  luxury_M_Preference: MyString
+  email_M_Preference: MyString
+
+two:
+  bar_M_Preference: MyString
+  fashion_M_Preference: MyString
+  events_M_Preference: MyString
+  beauty_M_Preference: MyString
+  luxury_M_Preference: MyString
+  email_M_Preference: MyString

@@ -1,0 +1,37 @@
+<h1>Listing m_professionels</h1>
+
+<table>
+  <tr>
+    <th>High school m professionel</th>
+    <th>College m professionel</th>
+    <th>Major m professionel</th>
+    <th>Degre m professionel</th>
+    <th>Occupation m professionel</th>
+    <th>Industry m professionel</th>
+    <th>Email m professionel</th>
+    <th>Date m professionel</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @m_professionels.each do |m_professionel| %>
+  <tr>
+    <td><%= m_professionel.high_school_M_Professionel %></td>
+    <td><%= m_professionel.college_M_Professionel %></td>
+    <td><%= m_professionel.major_M_Professionel %></td>
+    <td><%= m_professionel.degre_M_Professionel %></td>
+    <td><%= m_professionel.occupation_M_Professionel %></td>
+    <td><%= m_professionel.industry_M_Professionel %></td>
+    <td><%= m_professionel.email_M_Professionel %></td>
+    <td><%= m_professionel.date_M_Professionel %></td>
+    <td><%= link_to 'Show', m_professionel %></td>
+    <td><%= link_to 'Edit', edit_m_professionel_path(m_professionel) %></td>
+    <td><%= link_to 'Destroy', m_professionel, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New M professionel', new_m_professionel_path %>

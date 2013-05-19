@@ -1,0 +1,27 @@
+<h1>Listing m_sub_categories</h1>
+
+<table>
+  <tr>
+    <th>Name m subcategories</th>
+    <th>Img m subcategories</th>
+    <th>Id cat m subcategories</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @m_sub_categories.each do |m_sub_category| %>
+  <tr>
+    <td><%= m_sub_category.name_M_SubCategories %></td>
+    <td><%= m_sub_category.img_M_SubCategories %></td>
+    <td><%= m_sub_category.id_cat_M_SubCategories %></td>
+    <td><%= link_to 'Show', m_sub_category %></td>
+    <td><%= link_to 'Edit', edit_m_sub_category_path(m_sub_category) %></td>
+    <td><%= link_to 'Destroy', m_sub_category, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New M sub category', new_m_sub_category_path %>

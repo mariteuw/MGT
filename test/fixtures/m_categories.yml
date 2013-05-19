@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name_M_Categor: MyString
+  img_M_Categor: MyString
+
+two:
+  name_M_Categor: MyString
+  img_M_Categor: MyString

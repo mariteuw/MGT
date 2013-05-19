@@ -1,0 +1,35 @@
+<h1>Listing m_generals</h1>
+
+<table>
+  <tr>
+    <th>Gender m general</th>
+    <th>Relation m general</th>
+    <th>State m general</th>
+    <th>Postal code m general</th>
+    <th>About m general</th>
+    <th>Email m general</th>
+    <th>Date m general</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @m_generals.each do |m_general| %>
+  <tr>
+    <td><%= m_general.gender_M_General %></td>
+    <td><%= m_general.relation_M_General %></td>
+    <td><%= m_general.state_M_General %></td>
+    <td><%= m_general.postal_code_M_General %></td>
+    <td><%= m_general.about_M_General %></td>
+    <td><%= m_general.email_M_General %></td>
+    <td><%= m_general.date_M_General %></td>
+    <td><%= link_to 'Show', m_general %></td>
+    <td><%= link_to 'Edit', edit_m_general_path(m_general) %></td>
+    <td><%= link_to 'Destroy', m_general, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New M general', new_m_general_path %>

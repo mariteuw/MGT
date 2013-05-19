@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name_M_SubCategories: MyString
+  img_M_SubCategories: MyString
+  id_cat_M_SubCategories: 1
+
+two:
+  name_M_SubCategories: MyString
+  img_M_SubCategories: MyString
+  id_cat_M_SubCategories: 1

@@ -1,0 +1,45 @@
+#!/bin/bash
+# M_Contact
+rails generate scaffold M_Contact hometown_M_Contact:string address1_M_Contact:string address_M_Contact:string ccity_M_Contact:string ccountries_M_Contact:string cstate_M_Contact:string zip_M_Contact:string homephone_M_Contact:string cellphone_M_Contact:string webpage_M_Contact:string email_M_Contact:string date_M_Contact:string
+bundle exec rake db:migrate
+
+#M_Countries
+rails generate scaffold M_Countries name_M_Countries:string
+bundle exec rake db:migrate
+
+#M_Friends
+rails generate scaffold M_Friends id_sender_M_Friends:integer id_receiver_M_Friends:integer status_M_Friends:integer
+bundle exec rake db:migrate
+
+#M_General
+rails generate scaffold M_General gender_M_General:string relation_M_General:string state_M_General:string postal_code_M_General:string about_M_General:string email_M_General:string date_M_General:string
+bundle exec rake db:migrate
+
+#M_Preference
+rails generate scaffold M_Preference bar_M_Preference:string fashion_M_Preference:string events_M_Preference:string beauty_M_Preference:string luxury_M_Preference:string email_M_Preference:string
+bundle exec rake db:migrate
+
+#M_Professionel
+rails generate scaffold M_Professionel high_school_M_Professionel:string college_M_Professionel:string major_M_Professionel:string degre_M_Professionel:string occupation_M_Professionel:string industry_M_Professionel:string email_M_Professionel:string date_M_Professionel:string
+bundle exec rake db:migrate
+
+#M_Rating
+rails generate scaffold M_Rating rating_M_Rating:integer date_M_Rating:string id_user_M_Rating:integer id_tip_M_Rating:string id_owner_M_Rating:integer
+bundle exec rake db:migrate
+
+#M_Register
+rails generate scaffold M_Register id_city_M_Register:integer  fname_M_Register:string lname_M_Register:string date_bith_M_Register:string countrie_M_Register:string email_M_Register:string pic_M_Register:string date_today_M_Register:string pass_M_Register:string adresse1_M_Register:string status_M_Register:integer
+bundle exec rake db:migrate
+
+#M_Share
+rails generate scaffold M_Share id_sender_M_Share:integer id_recever_M_Share:integer id_tip_M_Share:integer date_M_Share:string msg_M_Share:string
+bundle exec rake bd:migrate
+
+#M_SubCategories
+rails generate scaffold M_SubCategories name_M_SubCategories:string img_M_SubCategories:string id_cat_M_SubCategories:integer
+bundle exec rake db:migrate
+
+#M_Tips
+rails generate scaffold M_Tips title_M_Tips:string date_M_Tips:string description_M_Tips:string img_M_Tips:string address_M_Tips:string id_city_M_Tips:integer id_subcat_M_Tips:integer id_user_M_Tips:integer
+bundle exec rake db:migrate
+

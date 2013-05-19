@@ -1,0 +1,49 @@
+<%= form_for(@m_tip) do |f| %>
+  <% if @m_tip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@m_tip.errors.count, "error") %> prohibited this m_tip from being saved:</h2>
+
+      <ul>
+      <% @m_tip.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title_M_Tips %><br />
+    <%= f.text_field :title_M_Tips %>
+  </div>
+  <div class="field">
+    <%= f.label :date_M_Tips %><br />
+    <%= f.text_field :date_M_Tips %>
+  </div>
+  <div class="field">
+    <%= f.label :description_M_Tips %><br />
+    <%= f.text_field :description_M_Tips %>
+  </div>
+  <div class="field">
+    <%= f.label :img_M_Tips %><br />
+    <%= f.text_field :img_M_Tips %>
+  </div>
+  <div class="field">
+    <%= f.label :address_M_Tips %><br />
+    <%= f.text_field :address_M_Tips %>
+  </div>
+  <div class="field">
+    <%= f.label :id_city_M_Tips %><br />
+    <%= f.text_field :id_city_M_Tips %>
+  </div>
+  <div class="field">
+    <%= f.label :id_subcat_M_Tips %><br />
+    <%= f.text_field :id_subcat_M_Tips %>
+  </div>
+  <div class="field">
+    <%= f.label :id_user_M_Tips %><br />
+    <%= f.text_field :id_user_M_Tips %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

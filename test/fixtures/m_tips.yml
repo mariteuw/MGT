@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title_M_Tips: MyString
+  date_M_Tips: MyString
+  description_M_Tips: MyString
+  img_M_Tips: MyString
+  address_M_Tips: MyString
+  id_city_M_Tips: 1
+  id_subcat_M_Tips: 1
+  id_user_M_Tips: 1
+
+two:
+  title_M_Tips: MyString
+  date_M_Tips: MyString
+  description_M_Tips: MyString
+  img_M_Tips: MyString
+  address_M_Tips: MyString
+  id_city_M_Tips: 1
+  id_subcat_M_Tips: 1
+  id_user_M_Tips: 1

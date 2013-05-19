@@ -1,4 +1,30 @@
 Mgt::Application.routes.draw do
+  resources :m_tips
+
+  resources :m_sub_categories
+
+  resources :m_shares
+
+  resources :m_registers
+
+  resources :m_ratings
+
+  resources :m_professionels
+
+  resources :m_preferences
+
+  resources :m_generals
+
+  resources :m_friends
+
+  resources :m_countries
+
+  resources :m_contacts
+
+  resources :m_cities
+
+  resources :m_categories
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

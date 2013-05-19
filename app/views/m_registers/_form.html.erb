@@ -1,0 +1,61 @@
+<%= form_for(@m_register) do |f| %>
+  <% if @m_register.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@m_register.errors.count, "error") %> prohibited this m_register from being saved:</h2>
+
+      <ul>
+      <% @m_register.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_city_M_Register %><br />
+    <%= f.text_field :id_city_M_Register %>
+  </div>
+  <div class="field">
+    <%= f.label :fname_M_Register %><br />
+    <%= f.text_field :fname_M_Register %>
+  </div>
+  <div class="field">
+    <%= f.label :lname_M_Register %><br />
+    <%= f.text_field :lname_M_Register %>
+  </div>
+  <div class="field">
+    <%= f.label :date_bith_M_Register %><br />
+    <%= f.text_field :date_bith_M_Register %>
+  </div>
+  <div class="field">
+    <%= f.label :countrie_M_Register %><br />
+    <%= f.text_field :countrie_M_Register %>
+  </div>
+  <div class="field">
+    <%= f.label :email_M_Register %><br />
+    <%= f.text_field :email_M_Register %>
+  </div>
+  <div class="field">
+    <%= f.label :pic_M_Register %><br />
+    <%= f.text_field :pic_M_Register %>
+  </div>
+  <div class="field">
+    <%= f.label :date_today_M_Register %><br />
+    <%= f.text_field :date_today_M_Register %>
+  </div>
+  <div class="field">
+    <%= f.label :pass_M_Register %><br />
+    <%= f.text_field :pass_M_Register %>
+  </div>
+  <div class="field">
+    <%= f.label :adresse1_M_Register %><br />
+    <%= f.text_field :adresse1_M_Register %>
+  </div>
+  <div class="field">
+    <%= f.label :status_M_Register %><br />
+    <%= f.text_field :status_M_Register %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

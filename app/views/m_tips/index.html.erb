@@ -1,0 +1,37 @@
+<h1>Listing m_tips</h1>
+
+<table>
+  <tr>
+    <th>Title m tips</th>
+    <th>Date m tips</th>
+    <th>Description m tips</th>
+    <th>Img m tips</th>
+    <th>Address m tips</th>
+    <th>Id city m tips</th>
+    <th>Id subcat m tips</th>
+    <th>Id user m tips</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @m_tips.each do |m_tip| %>
+  <tr>
+    <td><%= m_tip.title_M_Tips %></td>
+    <td><%= m_tip.date_M_Tips %></td>
+    <td><%= m_tip.description_M_Tips %></td>
+    <td><%= m_tip.img_M_Tips %></td>
+    <td><%= m_tip.address_M_Tips %></td>
+    <td><%= m_tip.id_city_M_Tips %></td>
+    <td><%= m_tip.id_subcat_M_Tips %></td>
+    <td><%= m_tip.id_user_M_Tips %></td>
+    <td><%= link_to 'Show', m_tip %></td>
+    <td><%= link_to 'Edit', edit_m_tip_path(m_tip) %></td>
+    <td><%= link_to 'Destroy', m_tip, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New M tip', new_m_tip_path %>

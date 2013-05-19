@@ -1,0 +1,2 @@
+module MSharesHelper
+end

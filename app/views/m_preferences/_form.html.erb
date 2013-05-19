@@ -1,0 +1,41 @@
+<%= form_for(@m_preference) do |f| %>
+  <% if @m_preference.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@m_preference.errors.count, "error") %> prohibited this m_preference from being saved:</h2>
+
+      <ul>
+      <% @m_preference.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bar_M_Preference %><br />
+    <%= f.text_field :bar_M_Preference %>
+  </div>
+  <div class="field">
+    <%= f.label :fashion_M_Preference %><br />
+    <%= f.text_field :fashion_M_Preference %>
+  </div>
+  <div class="field">
+    <%= f.label :events_M_Preference %><br />
+    <%= f.text_field :events_M_Preference %>
+  </div>
+  <div class="field">
+    <%= f.label :beauty_M_Preference %><br />
+    <%= f.text_field :beauty_M_Preference %>
+  </div>
+  <div class="field">
+    <%= f.label :luxury_M_Preference %><br />
+    <%= f.text_field :luxury_M_Preference %>
+  </div>
+  <div class="field">
+    <%= f.label :email_M_Preference %><br />
+    <%= f.text_field :email_M_Preference %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

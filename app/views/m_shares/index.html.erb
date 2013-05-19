@@ -1,0 +1,31 @@
+<h1>Listing m_shares</h1>
+
+<table>
+  <tr>
+    <th>Id sender m share</th>
+    <th>Id recever m share</th>
+    <th>Id tip m share</th>
+    <th>Date m share</th>
+    <th>Msg m share</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @m_shares.each do |m_share| %>
+  <tr>
+    <td><%= m_share.id_sender_M_Share %></td>
+    <td><%= m_share.id_recever_M_Share %></td>
+    <td><%= m_share.id_tip_M_Share %></td>
+    <td><%= m_share.date_M_Share %></td>
+    <td><%= m_share.msg_M_Share %></td>
+    <td><%= link_to 'Show', m_share %></td>
+    <td><%= link_to 'Edit', edit_m_share_path(m_share) %></td>
+    <td><%= link_to 'Destroy', m_share, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New M share', new_m_share_path %>

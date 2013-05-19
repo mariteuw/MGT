@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id_sender_M_Share: 1
+  id_recever_M_Share: 1
+  id_tip_M_Share: 1
+  date_M_Share: MyString
+  msg_M_Share: MyString
+
+two:
+  id_sender_M_Share: 1
+  id_recever_M_Share: 1
+  id_tip_M_Share: 1
+  date_M_Share: MyString
+  msg_M_Share: MyString

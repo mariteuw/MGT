@@ -1,0 +1,45 @@
+<h1>Listing m_contacts</h1>
+
+<table>
+  <tr>
+    <th>Hometown m contact</th>
+    <th>Address1 m contact</th>
+    <th>Address m contact</th>
+    <th>Ccity m contact</th>
+    <th>Ccountries m contact</th>
+    <th>Cstate m contact</th>
+    <th>Zip m contact</th>
+    <th>Homephone m contact</th>
+    <th>Cellphone m contact</th>
+    <th>Webpage m contact</th>
+    <th>Email m contact</th>
+    <th>Date m contact</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @m_contacts.each do |m_contact| %>
+  <tr>
+    <td><%= m_contact.hometown_M_Contact %></td>
+    <td><%= m_contact.address1_M_Contact %></td>
+    <td><%= m_contact.address_M_Contact %></td>
+    <td><%= m_contact.ccity_M_Contact %></td>
+    <td><%= m_contact.ccountries_M_Contact %></td>
+    <td><%= m_contact.cstate_M_Contact %></td>
+    <td><%= m_contact.zip_M_Contact %></td>
+    <td><%= m_contact.homephone_M_Contact %></td>
+    <td><%= m_contact.cellphone_M_Contact %></td>
+    <td><%= m_contact.webpage_M_Contact %></td>
+    <td><%= m_contact.email_M_Contact %></td>
+    <td><%= m_contact.date_M_Contact %></td>
+    <td><%= link_to 'Show', m_contact %></td>
+    <td><%= link_to 'Edit', edit_m_contact_path(m_contact) %></td>
+    <td><%= link_to 'Destroy', m_contact, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New M contact', new_m_contact_path %>

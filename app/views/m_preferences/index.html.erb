@@ -1,0 +1,33 @@
+<h1>Listing m_preferences</h1>
+
+<table>
+  <tr>
+    <th>Bar m preference</th>
+    <th>Fashion m preference</th>
+    <th>Events m preference</th>
+    <th>Beauty m preference</th>
+    <th>Luxury m preference</th>
+    <th>Email m preference</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @m_preferences.each do |m_preference| %>
+  <tr>
+    <td><%= m_preference.bar_M_Preference %></td>
+    <td><%= m_preference.fashion_M_Preference %></td>
+    <td><%= m_preference.events_M_Preference %></td>
+    <td><%= m_preference.beauty_M_Preference %></td>
+    <td><%= m_preference.luxury_M_Preference %></td>
+    <td><%= m_preference.email_M_Preference %></td>
+    <td><%= link_to 'Show', m_preference %></td>
+    <td><%= link_to 'Edit', edit_m_preference_path(m_preference) %></td>
+    <td><%= link_to 'Destroy', m_preference, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New M preference', new_m_preference_path %>
